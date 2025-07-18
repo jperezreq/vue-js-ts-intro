@@ -19,3 +19,19 @@ const getUser = (uid :string) => ({
 })
 
 console.log( getUser('ABCD-123') );
+
+const heroes = [
+    {
+        id: 1,
+        name: 'Batman', //Try to finish with trailing comma
+    },
+    {
+        id: 2,
+        name: 'Superman',
+        power: 'Super strong'
+    },
+];
+
+const hero = heroes.find( (h) => h.id === 2);
+
+console.log(hero?.power?.toUpperCase())

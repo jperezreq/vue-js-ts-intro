@@ -1,6 +1,6 @@
 // import heroes from "../data/heroes"; //Export for default
 
-import heroes, { owners } from "../data/heroes";
+import heroes, { owners, type Owner } from "../data/heroes";
 
 
 // console.log(heroes)
@@ -10,7 +10,11 @@ export const getHeroById = (id: number) => {
    return heroes.find( hero => hero.id === id) ?? {};
 }
 
-export const getHeroesByOwner = (owner: string) => {
+// export const getHeroesByOwner = (owner: string) => {
+//     return heroes.filter (hero => hero.owner === owner) ?? 'No exist :(';
+// }
+
+export const getHeroesByOwner = (owner: Owner) => {
     return heroes.filter (hero => hero.owner === owner) ?? 'No exist :(';
 }
 

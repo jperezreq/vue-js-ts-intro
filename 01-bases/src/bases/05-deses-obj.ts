@@ -45,4 +45,4 @@ const createHero = ( {name, age, codeName, power}: createHeroArgs ) => ({
 })
 
 
-console.log( createHero({ person }) )
+// console.log( createHero({ person }) )

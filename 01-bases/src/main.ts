@@ -12,6 +12,7 @@ import viteLogo from '/vite.svg'
 // import './bases/07-imp-exp';
 // import './bases/08-promises';
 // import './bases/09-fetch-api';
+import './bases/10-axios';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
